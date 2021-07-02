@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="//unpkg.com/brain.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    </style>
+
+  <style>
+    #color {
+      width: 100%;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .text {
+      font-family: 'Lora', serif;
+      font-size: 50px;
+    }
+
+    .white {
+      font-family: 'Lora', serif;
+      font-size: 100px;
+      color: white;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .button {
+        margin-right: 0.5em;
+        width: 60px;
+        height: 20px;
+    }
+  </style>
+</head>
+<body style="margin: 0%; ">
+  <div id="color">
+    <!-- <div class="white">White Text</div>
+    <div class="text">Black Text</div> -->
+    <div class="text" id="guess">Do I look better in black or white?</div>
+  </div>
+  <div class="buttons">
+    <button class="button" id="white-button">White</button>
+    <button class="button" id="black-button">Black</button>
+    <button class="button" id="print-button">Print</button>
+  </div>
+  <div class="diagram"></div>
+</body>
+</html>
